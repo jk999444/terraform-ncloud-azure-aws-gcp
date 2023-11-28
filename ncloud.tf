@@ -43,11 +43,6 @@ resource "ncloud_server" "public-server" {
   login_key_name            = "ncp20231116"
 }
 
-# # 네이버 클라우드 로그인 키 생성
-# resource "ncloud_login_key" "loginkey" {
-#   #key_name = "test-key"
-#   key_name = "ncp20231116"
-# }
 
 # 네이버 클라우드 공인 IP 생성
 resource "ncloud_public_ip" "public-ip" {
