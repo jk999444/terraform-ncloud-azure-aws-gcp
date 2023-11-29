@@ -1,17 +1,39 @@
 # 테라폼을 이용한 aws - ncloud - azure - gcp 가상서버 생성
 
-One Paragraph of project description goes here
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
+## terraform 설치
 ```
-Give examples
+1. 리눅스 우분투 버전으로 설치를 진행 합니다
+```
+```
+2. 터미널 창에 아래 명령어를 입력을 해줍니다
+```
+```   
+3. 아래 명령어를 한줄씩 써주세요
+$ sudo  apt-get 업데이트 &&  sudo  apt-get  install -y gnupg 소프트웨어 속성-공통
+$ wget -O- https://apt.releases.hashicorp.com/gpg | \gpg --dearmor | \sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+$ gpg --no-default-keyring \--keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \--fingerprint
+$ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \sudo tee /etc/apt/sources.list.d/hashicorp.list
+$ sudo apt update
+$ sudo apt-get install terraform
+$
+
+4. terraform version 명령어를 입력후 버전 정보가 나오면 설치확인을 할수 있습니다
+```
+
+5. 설치가 제대로 되지 않았다면 링크를 참조해 따라해보시길 바랍니다. <[https://developer.hashicorp.com/terraform/install](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)>   
+
+### aws 사용법
+```
+1. aws 사이트에 들어가 로그인을 합니다. -> <https://ap-northeast-2.console.aws.amazon.com/console/home?region=ap-northeast-2>
+```
+```
+2. 로그인을 한 후 보안자격증명을 들어간 뒤 엑세스 키 값을 생성 합니다
+   -> <https://us-east-1.console.aws.amazon.com/iam/home#/security_credentials?section=IAM_credentials>
+```
+```
+3.    
 ```
 
 ### Installing
